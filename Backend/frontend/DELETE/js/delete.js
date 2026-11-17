@@ -19,7 +19,7 @@ formulario.addEventListener("submit", function (evento) {
     _status.textContent = "Deletando material..."
     _status.className = "alert theme-info mt-3"
 
-    fetch(`http://localhost:5201/api/Materiais/deletar/${id.value}`,
+    fetch(`http://localhost:5201/api/Materiais/${id.value}`,
         { method: "DELETE", })
 
         .then(function (resposta) {

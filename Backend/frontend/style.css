@@ -9,6 +9,12 @@ span {
 
 }
 
+header {
+    background-color: #ffffff; 
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
 .texto {
     font-size: 2.2rem;
     font-weight: 300;
