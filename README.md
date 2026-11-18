@@ -42,41 +42,37 @@ Os endpoints consumidos nas requisições `fetch` foram:
 Separamos o front-end por métodos HTTP, mantendo a página principal na raiz da pasta `frontend` e subpastas específicas para cada operação, com seu próprio HTML, CSS e pasta `js/`:
 
 ```text
-frontend/
-├── index.html
-├── style.css
-├── scripts.js
-├── README.md
-├── DELETE/
-|   ├── deletar.html
-|   ├── style.css
-|   └── js/
-|       └── delete.js
-├── GET/
-│   ├── consulta_por_id.html
-│   ├── exibir_tudo.html
-│   ├── style.css
-│   ├── ver_descricao.html
-│   └── js/
-│       ├── consulta_por_id.js
-│       ├── exibir_tudo.js
-│       └── ver_descricao.js
-├── POST/
-│   ├── adicionar_livro.html
-│   ├── adicionar_revista.html
-│   ├── emprestimo.html
-│   ├── style.css
-│   └── js/
-│       ├── adicionar_livro.js
-│       ├── adicionar_revista.js
-│       └── emprestimo.js
-└── PUT/
-   ├── atualizar_livro.html
-   ├── atualizar_revista.html
-   ├── style.css
-   └── js/
-       ├── atualizar_livro.js
-       └── atualizar_revista.js
+atividade-js-devweb-3-p2/
+├── Backend/
+│   ├── MinhaBiblioteca/
+│   │   ├── Controllers/
+│   │   │   └── MateriaisController.cs
+│   │   ├── Models/
+│   │   │   ├── IEmprestimo.cs
+│   │   │   ├── Livro.cs
+│   │   │   ├── MaterialBiblioteca.cs
+│   │   │   └── Revista.cs
+│   │   ├── Repositories/
+│   │   │   ├── IMaterialRepository.cs
+│   │   │   └── MaterialRepository.cs
+│   │   ├── Properties/
+│   │   ├── appsettings.json
+│   │   ├── appsettings.Development.json
+│   │   ├── MinhaBiblioteca.csproj
+│   │   ├── MinhaBiblioteca.http
+│   │   └── Program.cs
+│   └── frontend/
+│       ├── GET/
+│       ├── POST/
+│       ├── PUT/
+│       ├── DELETE/
+│       ├── index.html
+|       ├── instrucoes.md
+│       ├── style.css
+│       └── scripts.js
+├── README.md/
+└── .vscode/
+    └── settings.json
 
 ```
 
