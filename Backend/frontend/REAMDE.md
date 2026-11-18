@@ -1,1 +1,0 @@
-# Desenvolvimento da Biblioteca do Super Gremio.
